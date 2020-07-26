@@ -10,13 +10,13 @@ type Date struct {
 
 // Getters
 
-func (d Date) Year() (year int) {
+func (d *Date) Year() (year int) {
 	return d.year
 }
-func (d Date) Month() (month int) {
+func (d *Date) Month() (month int) {
 	return d.month
 }
-func (d Date) Day() (day int) {
+func (d *Date) Day() (day int) {
 	return d.day
 }
 
