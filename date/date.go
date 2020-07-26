@@ -8,6 +8,19 @@ type Date struct {
 	day   int
 }
 
+// Getters
+
+func (d Date) Year() (year int) {
+	return d.year
+}
+func (d Date) Month() (month int) {
+	return d.month
+}
+func (d Date) Day() (day int) {
+	return d.day
+}
+
+// Setters
 func (d *Date) SetYear(year int) error {
 	if year < 0 {
 		return errors.New("invalid Year")
